@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c07602f15ebd8e74cb146f050f1c515c, type: 3}
+  m_Name: GameSettings
+  m_EditorClassIdentifier: 
+  playObjects:
+    spawnArea:
+      serializedVersion: 2
+      x: -7
+      y: -10
+      width: 14
+      height: 15
+    minObjectDistance: 2
+    maxCountOnScene: 10
+    spawnDelay: 0.1
+    objects:
+    - prefab: {fileID: 6664076393832772778, guid: 692eb41455de41b42a5f574ccfe7d0cf,
+        type: 3}
+      maxCountOnScene: 3
+      pointsOnTouch: 10
+      pointsOnNotTouch: 0
+      timeActive:
+        min: 1
+        max: 2
+    - prefab: {fileID: 149406856787970450, guid: 9690a7b61552e9145b7432126d9d14f4,
+        type: 3}
+      maxCountOnScene: 3
+      pointsOnTouch: 10
+      pointsOnNotTouch: 0
+      timeActive:
+        min: 1
+        max: 2
+    - prefab: {fileID: 4574543185005722686, guid: 3f0b398849d290845a833f9addd58863,
+        type: 3}
+      maxCountOnScene: 3
+      pointsOnTouch: 10
+      pointsOnNotTouch: 0
+      timeActive:
+        min: 1
+        max: 2
+    - prefab: {fileID: 745485807735861238, guid: ac262cfa8c747314e8f41a4471e1608f,
+        type: 3}
+      maxCountOnScene: 3
+      pointsOnTouch: 10
+      pointsOnNotTouch: 0
+      timeActive:
+        min: 1
+        max: 2
+    - prefab: {fileID: 4370859195539022080, guid: 2ee53293f20a2b749a2020d86e1fb7ce,
+        type: 3}
+      maxCountOnScene: 1
+      pointsOnTouch: -10
+      pointsOnNotTouch: 0
+      timeActive:
+        min: 1
+        max: 2
+    - prefab: {fileID: 775083155984391275, guid: 70c19413909a1df4d94d138ea933a75a,
+        type: 3}
+      maxCountOnScene: 1
+      pointsOnTouch: -10
+      pointsOnNotTouch: 0
+      timeActive:
+        min: 1
+        max: 2
+    - prefab: {fileID: 6075774341120433917, guid: a0e5f7d2ad73e9c49b8b642d129b31a2,
+        type: 3}
+      maxCountOnScene: 1
+      pointsOnTouch: -10
+      pointsOnNotTouch: 0
+      timeActive:
+        min: 1
+        max: 2
+    - prefab: {fileID: 8980628551854603174, guid: 94dc473a422e3204e8bddcdfe6644129,
+        type: 3}
+      maxCountOnScene: 1
+      pointsOnTouch: -10
+      pointsOnNotTouch: 0
+      timeActive:
+        min: 1
+        max: 2
+  touchSettings:
+    touchSize: 1
+  gameTimerSettings:
+    playTime: 60
+    timerUpdateStep: 0.1
+  uiGameTimer:
+    startColor: {r: 0.065308236, g: 0.5943396, b: 0.008410451, a: 1}
+    endStartTime: 40
+    warningColor: {r: 1, g: 0.8248069, b: 0, a: 1}
+    endWarningTime: 10
+    endColor: {r: 1, g: 0.0047169924, b: 0.0047169924, a: 1}
+  uiPointsCounterSettings:
+    delay: 0.1
+    step: 0.887
+  connectSettings:
+    createTestServer: 1
+    serverIP: 127.0.0.1
+    serverPort: 4444
+    connectionTimeout: 5
