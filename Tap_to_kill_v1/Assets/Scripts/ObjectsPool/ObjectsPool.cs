@@ -21,6 +21,8 @@ public class ObjectsPool : MonoBehaviour
     private int numberActiveObjects = 0;
     // controlling activity spawn coroutine 
     private bool spawnActive = true;
+    // handle for main spawn coroutine to have ability stop it
+    private Coroutine coSpawnHandle;
 
     public void Awake() {
         // cache tranform
@@ -91,15 +93,14 @@ public class ObjectsPool : MonoBehaviour
     /// Starts spawn Coroutine
     /// </summary>
     public void StartSpawn() {
-        StartCoroutine(coSpawn());
+        coSpawnHandle = StartCoroutine(coSpawn());
     }
 
     /// <summary>
     /// Stops spawn Coroutine
     /// </summary>
     public void StopSpawn() {
-        StopCoroutine(coSpawn());
-        spawnActive = false;
+        StopCoroutine(coSpawnHandle);
     }
 
     /// <summary>
